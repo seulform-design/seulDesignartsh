@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ARTISH Journal — 공간과 작품 선택을 돕는 짧고 명확한 가이드.">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Journal — ARTISH">
+  <meta property="og:description" content="공간 기준 선택 가이드를 짧고 명확하게 제공하는 ARTISH 저널.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.artish.kr/journal.html">
+  <meta property="og:site_name" content="ARTISH">
+  <meta property="og:locale" content="ko_KR">
+  <title>Journal — ARTISH</title>
+  <link rel="canonical" href="https://www.artish.kr/journal.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%230A0A0A' width='32' height='32'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23F4F1EA' font-size='15' font-family='sans-serif' font-weight='600'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=JetBrains+Mono:wght@400;500&family=Nanum+Myeongjo:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/journal.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+<div class="l-wrap">
+
+  <a href="#main" class="u-skip">본문 바로가기</a>
+
+  <header class="c-header is-scrolled" id="siteHeader">
+    <div class="c-header__inner">
+      <p class="c-header__brand"><a href="./index.html">ARTISH</a></p>
+      <nav class="c-nav" id="primaryNav" aria-label="Primary">
+        <a class="c-nav__item nav-trigger" data-mega="shop" href="./shop.html" aria-expanded="false" aria-controls="mega-shop">Shop</a>
+        <a class="c-nav__item nav-trigger" data-mega="curation" href="./curation.html" aria-expanded="false" aria-controls="mega-curation">Curation</a>
+        <a class="c-nav__item nav-trigger" data-mega="spaces" href="./spaces.html" aria-expanded="false" aria-controls="mega-spaces">Spaces</a>
+        <a class="c-nav__item nav-trigger" data-mega="artists" href="./artist.html" aria-expanded="false" aria-controls="mega-artists">Artists</a>
+        <a class="c-nav__item nav-trigger" data-mega="gift" href="./gift.html" aria-expanded="false" aria-controls="mega-gift">Gift</a>
+        <a class="c-nav__item nav-trigger" data-mega="journal" href="./journal.html" aria-expanded="false" aria-controls="mega-journal" aria-current="page">Journal</a>
+      </nav>
+      <button type="button" class="c-header__menu" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"></button>
+      <div class="c-header__utils">
+        <button type="button" id="search-toggle" aria-haspopup="dialog" aria-controls="search-dialog">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="c-mobile-menu" id="mobileMenu" inert>
+    <div class="c-mobile-menu__panel">
+      <button type="button" class="c-mobile-menu__close" aria-label="메뉴 닫기">&times;</button>
+      <nav class="c-mobile-menu__nav" aria-label="모바일 주요 메뉴">
+        <a href="./shop.html">Shop</a>
+        <a href="./curation.html">Curation</a>
+        <a href="./spaces.html">Spaces</a>
+        <a href="./artist.html">Artists</a>
+        <a href="./gift.html">Gift</a>
+        <a href="./journal.html">Journal</a>
+      </nav>
+      <div class="c-mobile-menu__util">
+        <button type="button" class="js-mobile-search">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- 1 · JOURNAL HERO -->
+    <section class="s-jr-hero" aria-labelledby="jr-hero-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-jr-hero__head">
+
+          </header>
+
+          <div class="s-jr-hero__main">
+            <h1 id="jr-hero-title" class="s-jr-hero__title">보기 좋은 것보다, <br> <em>맞는 선택을 돕는 글</em></h1>
+          </div>
+
+          <p class="s-jr-hero__toolbar">3 min read · 공간 기준 선택 가이드</p>
+
+          <div class="s-jr-hero__cta">
+            <a href="#essay-styling" class="c-btn c-btn--primary"><span>스타일링 가이드</span><span class="arrow" aria-hidden="true"></span></a>
+            <a href="#essay-art-space" class="c-btn"><span>아트와 공간 읽기</span><span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · STYLING GUIDES -->
+    <section class="s-jr-list" id="essay-styling" aria-labelledby="styling-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-jr-list__head">
+            <h2 id="styling-title">Journal notes, <em>clear and short</em></h2>
+            <p class="meta">3 posts<br>updated</p>
+          </header>
+          <div class="s-jr-list__grid">
+            <a href="./product-detail.html#space-fit" class="s-jr-list__post">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">No. 01</span>
+                <img src="./img/Review11.jpeg" alt="거실 작품 선택 기준" loading="lazy">
+              </div>
+              <div class="row"><span>3 min read</span><span>Living</span></div>
+              <h3>거실 작품 선택 <em>기준</em></h3>
+              <p class="cap">사이즈 · 시선 높이 · 톤 충돌 체크</p>
+            </a>
+            <a href="./product-detail.html#why-this" class="s-jr-list__post">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">No. 02</span>
+                <img src="./img/Review3.jpg" alt="침실 저채도 가이드" loading="lazy">
+              </div>
+              <div class="row"><span>4 min read</span><span>Bedroom</span></div>
+              <h3>침실은 왜 저채도 <em>작품</em>이 유리한가</h3>
+              <p class="cap">수면 공간 시선 피로 최소화 원칙</p>
+            </a>
+            <a href="./product-detail.html#detail" class="s-jr-list__post">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">No. 03</span>
+                <img src="./img/Category1.png" alt="프레임 선택 가이드" loading="lazy">
+              </div>
+              <div class="row"><span>5 min read</span><span>Frame</span></div>
+              <h3>프레임 선택과 <em>공간 균형</em></h3>
+              <p class="cap">오크 · 블랙 · 화이트 매칭 가이드</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ART & SPACE -->
+    <section class="s-jr-list s-jr-list--soft" id="essay-art-space" aria-labelledby="art-space-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-jr-list__head">
+            <h2 id="art-space-title">Art &amp; space, <em>quick reference</em></h2>
+            <p class="meta">short reads<br>for decision</p>
+          </header>
+          <div class="s-jr-list__grid">
+            <a href="./spaces.html#living" class="s-jr-list__post">
+              <div class="image-box">
+                <span class="c-badge">Reference</span>
+                <img src="./img/Review4.jpg" alt="거실 메인월 배치" loading="lazy">
+              </div>
+              <div class="row"><span>2 min read</span><span>Living</span></div>
+              <h3>거실 메인월 작품 <em>배치</em></h3>
+              <p class="cap">폭 비율 · 높이 기준 · 시선 정렬</p>
+            </a>
+            <a href="./spaces.html#bedroom" class="s-jr-list__post" id="essay-color">
+              <div class="image-box">
+                <span class="c-badge">Reference</span>
+                <img src="./img/cration12.png" alt="컬러와 수면 공간" loading="lazy">
+              </div>
+              <div class="row"><span>3 min read</span><span>Bedroom</span></div>
+              <h3>컬러와 수면 공간 <em>무드</em></h3>
+              <p class="cap">저채도 우선 · 조명 톤 매칭</p>
+            </a>
+            <a href="./product-detail.html#space-fit" class="s-jr-list__post" id="essay-light">
+              <div class="image-box">
+                <span class="c-badge">Reference</span>
+                <img src="./img/keyword.jpg" alt="빛의 각도와 작품" loading="lazy">
+              </div>
+              <div class="row"><span>3 min read</span><span>Light</span></div>
+              <h3>빛의 각도와 <em>작품 표정</em></h3>
+              <p class="cap">정면광보다 측면광이 유리한 경우</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · NEWSLETTER -->
+    <section class="s-jr-news" aria-labelledby="news-title">
+      <div class="l-container">
+        <div class="content">
+          <div class="s-jr-news__group is-fade">
+            <div class="s-jr-news__text">
+              <span class="s-jr-news__eyebrow">Curator's letter</span>
+              <h2 id="news-title">월 1회, <em>한 호흡의 큐레이션</em></h2>
+              <p>이번 달의 작품 6점, 큐레이터 노트, 다음 전시 미리보기. 광고 없이 한 번만 보냅니다. 언제든 1초에 해지 가능합니다.</p>
+              <ul class="s-jr-news__perks">
+                <li>월 1회 발행</li>
+                <li>광고 0건</li>
+                <li>1초 해지</li>
+              </ul>
+              <figure class="image-box s-jr-news__inline-visual">
+                <img src="./img/curation00.jpg" alt="큐레이션 레터와 어울리는 갤러리 작품 톤" loading="lazy">
+              </figure>
+            </div>
+            <form class="s-jr-news__form" action="#" method="post" novalidate>
+              <div class="s-jr-news__row">
+                <label for="news-email" class="u-sr-only">이메일</label>
+                <input type="email" id="news-email" name="email" placeholder="your@email.com" required autocomplete="email">
+                <button type="submit" aria-label="구독하기">Subscribe<span class="arrow" aria-hidden="true">→</span></button>
+              </div>
+              <p class="s-jr-news__note">※ 개인정보는 큐레이션 발송 목적으로만 사용됩니다.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__top">
+        <div class="c-footer__brand">
+          <h2>ARTISH</h2>
+          <p>Art lives in space 공간을 채우는 가장 조용한 선택,<br> 큐레이션 기반 아트 커머스.</p>
+          <address class="c-footer__addr">
+            <span>서울 서초구 남부순환로 2406</span>
+            <span>예술의전당 비타민스테이션 · 아티쉬</span>
+            <span><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a> · <a href="tel:0225888444">02&#8209;588&#8209;8444</a></span>
+          </address>
+        </div>
+        <div class="c-footer__col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="./shop.html">All</a></li>
+            <li><a href="./curation.html">Curation</a></li>
+            <li><a href="./spaces.html">Spaces</a></li>
+            <li><a href="./gift.html">Gift</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="./about.html">Brand</a></li>
+            <li><a href="./artist.html">Artists</a></li>
+            <li><a href="./journal.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#shipping">Shipping</a></li>
+            <li><a href="#return">Return</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Customer</h3>
+          <ul>
+            <li><a href="tel:0225888444">02&#8209;588&#8209;8444</a></li>
+            <li><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a></li>
+            <li><span>09:30 — 17:00</span></li>
+            <li><span>주말·공휴일 휴무</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-footer__bottom">
+        <div class="c-footer__copy">
+          <span>© 2026 ARTISH</span>
+          <span class="div">·</span>
+          <span>(주)한국아트체인</span>
+          <span class="div">·</span>
+          <span>대표 정영산</span>
+          <span class="div">·</span>
+          <span>사업자번호 214-85-09363</span>
+          <span class="div">·</span>
+          <span>통신판매업신고 2002-서울서초-1726</span>
+        </div>
+        <ul class="c-footer__policy">
+          <li><a href="./about.html">회사소개</a></li>
+          <li><a href="#terms">이용약관</a></li>
+          <li><a href="#privacy">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="back-to-top" class="c-back-top" aria-label="Top">↑</a>
+
+  <dialog id="search-dialog" class="c-search" aria-labelledby="search-dialog-title" aria-modal="true">
+    <div class="c-search__inner">
+      <form method="dialog">
+        <button type="submit" class="c-search__close" aria-label="검색 닫기">×</button>
+      </form>
+      <h2 id="search-dialog-title" class="c-search__title">검색.</h2>
+      <p class="c-search__desc">작품명 · 작가 · 스타일 · 공간</p>
+      <form class="c-search__form" action="./shop.html" method="get" role="search">
+        <label for="search-query" class="u-sr-only">검색어</label>
+        <input type="search" id="search-query" name="q" class="c-search__input" autocomplete="off" placeholder="차분한, 추상, 거실…">
+        <div class="c-search__actions">
+          <button type="submit" formmethod="dialog" formnovalidate class="c-btn c-btn--ghost">닫기</button>
+          <button type="submit" class="c-btn c-btn--primary"><span>검색</span><span class="arrow" aria-hidden="true"></span></button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+</div>
+</body>
+</html>

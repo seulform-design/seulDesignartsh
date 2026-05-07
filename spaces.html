@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ARTISH Spaces — 실제 공간 사례로 작품 선택을 쉽게 만드세요.">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Spaces — ARTISH">
+  <meta property="og:description" content="공간 사례와 사이즈 기준으로 배치 판단을 쉽게 만드는 ARTISH Spaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.artish.kr/spaces.html">
+  <meta property="og:site_name" content="ARTISH">
+  <meta property="og:locale" content="ko_KR">
+  <title>Spaces — ARTISH</title>
+  <link rel="canonical" href="https://www.artish.kr/spaces.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%230A0A0A' width='32' height='32'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23F4F1EA' font-size='15' font-family='sans-serif' font-weight='600'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=JetBrains+Mono:wght@400;500&family=Nanum+Myeongjo:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/spaces.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+<div class="l-wrap">
+
+  <a href="#main" class="u-skip">본문 바로가기</a>
+
+  <header class="c-header is-scrolled" id="siteHeader">
+    <div class="c-header__inner">
+      <p class="c-header__brand"><a href="./index.html">ARTISH</a></p>
+      <nav class="c-nav" id="primaryNav" aria-label="Primary">
+        <a class="c-nav__item nav-trigger" data-mega="shop" href="./shop.html" aria-expanded="false" aria-controls="mega-shop">Shop</a>
+        <a class="c-nav__item nav-trigger" data-mega="curation" href="./curation.html" aria-expanded="false" aria-controls="mega-curation">Curation</a>
+        <a class="c-nav__item nav-trigger" data-mega="spaces" href="./spaces.html" aria-expanded="false" aria-controls="mega-spaces" aria-current="page">Spaces</a>
+        <a class="c-nav__item nav-trigger" data-mega="artists" href="./artist.html" aria-expanded="false" aria-controls="mega-artists">Artists</a>
+        <a class="c-nav__item nav-trigger" data-mega="gift" href="./gift.html" aria-expanded="false" aria-controls="mega-gift">Gift</a>
+        <a class="c-nav__item nav-trigger" data-mega="journal" href="./journal.html" aria-expanded="false" aria-controls="mega-journal">Journal</a>
+      </nav>
+      <button type="button" class="c-header__menu" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"></button>
+      <div class="c-header__utils">
+        <button type="button" id="search-toggle" aria-haspopup="dialog" aria-controls="search-dialog">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="c-mobile-menu" id="mobileMenu" inert>
+    <div class="c-mobile-menu__panel">
+      <button type="button" class="c-mobile-menu__close" aria-label="메뉴 닫기">&times;</button>
+      <nav class="c-mobile-menu__nav" aria-label="모바일 주요 메뉴">
+        <a href="./shop.html">Shop</a>
+        <a href="./curation.html">Curation</a>
+        <a href="./spaces.html">Spaces</a>
+        <a href="./artist.html">Artists</a>
+        <a href="./gift.html">Gift</a>
+        <a href="./journal.html">Journal</a>
+      </nav>
+      <div class="c-mobile-menu__util">
+        <button type="button" class="js-mobile-search">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- 1 · SPACES HERO -->
+    <section class="s-sp-hero" aria-labelledby="sp-hero-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-sp-hero__head">
+
+          </header>
+
+          <div class="s-sp-hero__main">
+            <h1 id="sp-hero-title" class="s-sp-hero__title">내 공간에 놓였을 때 <em>더 정확한 선택</em></h1>
+          </div>
+
+          <p class="s-sp-hero__toolbar">거실 · 침실 · 다이닝 · 작업실 · 복도</p>
+
+          <div class="s-sp-hero__cta">
+            <a href="#living" class="c-btn c-btn--primary"><span>공간 사례 보기</span><span class="arrow" aria-hidden="true"></span></a>
+            <a href="#size-s" class="c-btn"><span>사이즈 기준 보기</span><span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ROOMS -->
+    <section class="s-sp-rooms" id="living" aria-labelledby="rooms-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-sp-rooms__head">
+            <h2 id="rooms-title">Space case <em>by room</em></h2>
+            <p class="meta">5 rooms<br>curated</p>
+          </header>
+          <div class="s-sp-rooms__grid">
+            <a href="./product-detail.html#space-fit" class="s-sp-rooms__item">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Living</span>
+                <span class="room-no">01 / 05</span>
+                <img src="./img/cration1.jpg" alt="거실 메인월 중심 작품" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Living</span><span class="price">추천 12점</span></div>
+              <h3>거실</h3>
+              <p class="cap">메인월 중심, 중대형 작품 추천</p>
+            </a>
+            <a href="./product-detail.html#space-fit" class="s-sp-rooms__item" id="bedroom">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Bedroom</span>
+                <span class="room-no">02 / 05</span>
+                <img src="./img/cration12.png" alt="침실 저채도 작품" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Bedroom</span><span class="price">추천 9점</span></div>
+              <h3>침실</h3>
+              <p class="cap">저채도, 시선 피로 낮은 작품</p>
+            </a>
+            <a href="./product-detail.html#space-fit" class="s-sp-rooms__item" id="dining">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Dining</span>
+                <span class="room-no">03 / 05</span>
+                <img src="./img/Review7.jpg" alt="다이닝 식탁 시선 높이" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Dining</span><span class="price">추천 7점</span></div>
+              <h3>다이닝</h3>
+              <p class="cap">식탁 시선 높이 기준 조합</p>
+            </a>
+            <a href="./product-detail.html#space-fit" class="s-sp-rooms__item" id="workspace">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Workspace</span>
+                <span class="room-no">04 / 05</span>
+                <img src="./img/cration13.jpg" alt="작업실 집중감 유지" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Workspace</span><span class="price">추천 8점</span></div>
+              <h3>작업실</h3>
+              <p class="cap">집중감 유지, 대비 낮은 톤</p>
+            </a>
+            <a href="./product-detail.html#space-fit" class="s-sp-rooms__item" id="hallway">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Hallway</span>
+                <span class="room-no">05 / 05</span>
+                <img src="./img/Review8.jpg" alt="복도 세로형 리듬" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Hallway</span><span class="price">추천 6점</span></div>
+              <h3>복도</h3>
+              <p class="cap">세로형 중심, 리듬감 있는 배치</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · BY SIZE -->
+    <section class="s-sp-size" id="size-s" aria-labelledby="size-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-sp-size__head">
+            <h2 id="size-title">By size, <em>space balance</em></h2>
+            <p class="meta">S / M / L<br>pair</p>
+          </header>
+          <div class="s-sp-size__grid">
+            <a href="./product-detail.html" class="s-sp-size__item">
+              <div class="image-box" data-size="S"><img src="./img/balance1.jpg" alt="소형 작품" loading="lazy"></div>
+              <div class="row"><span class="num">S (~50cm)</span><span>복도/현관</span></div>
+              <h3>소형 작품 추천</h3>
+              <p class="cap">리듬감 있는 세로 배치</p>
+            </a>
+            <a href="./product-detail.html" class="s-sp-size__item" id="size-m">
+              <div class="image-box" data-size="M"><img src="./img/balance2.jpg" alt="중형 작품" loading="lazy"></div>
+              <div class="row"><span class="num">M (50–100cm)</span><span>거실/다이닝</span></div>
+              <h3>중형 작품 추천</h3>
+              <p class="cap">메인월 중심 안정 비율</p>
+            </a>
+            <a href="./product-detail.html" class="s-sp-size__item" id="size-l">
+              <div class="image-box" data-size="L"><img src="./img/balance3.jpg" alt="대형 작품" loading="lazy"></div>
+              <div class="row"><span class="num">L (100cm+)</span><span>거실 메인</span></div>
+              <h3>대형 작품 추천</h3>
+              <p class="cap">한 점 중심, 주변 요소 최소화</p>
+            </a>
+            <a href="./product-detail.html" class="s-sp-size__item" id="size-pair">
+              <div class="image-box" data-size="Pair"><img src="./img/balance4.webp" alt="페어 / 세트" loading="lazy"></div>
+              <div class="row"><span class="num">Pair / Set</span><span>침실/서재</span></div>
+              <h3>페어/세트 추천</h3>
+              <p class="cap">시선 분산을 줄이는 2점 구성</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · CUSTOMER SPACE GALLERY -->
+    <section class="s-sp-gallery" id="customer-spaces" aria-labelledby="gallery-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-sp-gallery__head is-fade">
+            <h2 id="gallery-title">In real <em>spaces</em></h2>
+            <p class="meta"><em>#YourArtish</em><br>구매자 사례 8 컷</p>
+          </header>
+          <div class="s-sp-gallery__grid">
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review10.webp" alt="김*희님의 거실">
+              <span class="s-sp-gallery__caption"><span class="who">김*희 · 거실</span><span class="work">Soft Light · 60×80cm</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review3.jpg" alt="박*우님의 침실">
+              <span class="s-sp-gallery__caption"><span class="who">박*우 · 침실</span><span class="work">Quiet Brown</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review7.jpg" alt="이*준님의 다이닝">
+              <span class="s-sp-gallery__caption"><span class="who">이*준 · 다이닝</span><span class="work">Urban Calm</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review11.jpeg" alt="정*은님의 거실">
+              <span class="s-sp-gallery__caption"><span class="who">정*은 · 거실</span><span class="work">Warm Window</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review2.jpg" alt="윤*아님의 작업실">
+              <span class="s-sp-gallery__caption"><span class="who">윤*아 · 작업실</span><span class="work">Pale Field</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review8.jpg" alt="강*수님의 복도">
+              <span class="s-sp-gallery__caption"><span class="who">강*수 · 복도</span><span class="work">3점 갤러리 월</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/cration12.png" alt="조*민님의 침실">
+              <span class="s-sp-gallery__caption"><span class="who">조*민 · 침실</span><span class="work">Quiet Stone</span></span>
+            </a>
+            <a href="./product-detail.html" class="s-sp-gallery__tile">
+              <img src="./img/Review4.jpg" alt="한*지님의 거실">
+              <span class="s-sp-gallery__caption"><span class="who">한*지 · 거실</span><span class="work">Long Horizon</span></span>
+            </a>
+          </div>
+          <div class="s-sp-gallery__foot">
+            <p>※ 모든 이미지는 구매자 동의 하에 게재 · <em>#YourArtish</em> 태그 시 추가 적립</p>
+            <a href="./contact.html" class="c-link">내 공간 등록하기 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__top">
+        <div class="c-footer__brand">
+          <h2>ARTISH</h2>
+          <p>Art lives in space 공간을 채우는 가장 조용한 선택,<br> 큐레이션 기반 아트 커머스.</p>
+          <address class="c-footer__addr">
+            <span>서울 서초구 남부순환로 2406</span>
+            <span>예술의전당 비타민스테이션 · 아티쉬</span>
+            <span><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a> · <a href="tel:0225888444">02&#8209;588&#8209;8444</a></span>
+          </address>
+        </div>
+        <div class="c-footer__col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="./shop.html">All</a></li>
+            <li><a href="./curation.html">Curation</a></li>
+            <li><a href="./spaces.html">Spaces</a></li>
+            <li><a href="./gift.html">Gift</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="./about.html">Brand</a></li>
+            <li><a href="./artist.html">Artists</a></li>
+            <li><a href="./journal.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#shipping">Shipping</a></li>
+            <li><a href="#return">Return</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Customer</h3>
+          <ul>
+            <li><a href="tel:0225888444">02&#8209;588&#8209;8444</a></li>
+            <li><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a></li>
+            <li><span>09:30 — 17:00</span></li>
+            <li><span>주말·공휴일 휴무</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-footer__bottom">
+        <div class="c-footer__copy">
+          <span>© 2026 ARTISH</span>
+          <span class="div">·</span>
+          <span>(주)한국아트체인</span>
+          <span class="div">·</span>
+          <span>대표 정영산</span>
+          <span class="div">·</span>
+          <span>사업자번호 214-85-09363</span>
+          <span class="div">·</span>
+          <span>통신판매업신고 2002-서울서초-1726</span>
+        </div>
+        <ul class="c-footer__policy">
+          <li><a href="./about.html">회사소개</a></li>
+          <li><a href="#terms">이용약관</a></li>
+          <li><a href="#privacy">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="back-to-top" class="c-back-top" aria-label="Top">↑</a>
+
+  <dialog id="search-dialog" class="c-search" aria-labelledby="search-dialog-title" aria-modal="true">
+    <div class="c-search__inner">
+      <form method="dialog">
+        <button type="submit" class="c-search__close" aria-label="검색 닫기">×</button>
+      </form>
+      <h2 id="search-dialog-title" class="c-search__title">검색.</h2>
+      <p class="c-search__desc">작품명 · 작가 · 스타일 · 공간</p>
+      <form class="c-search__form" action="./shop.html" method="get" role="search">
+        <label for="search-query" class="u-sr-only">검색어</label>
+        <input type="search" id="search-query" name="q" class="c-search__input" autocomplete="off" placeholder="차분한, 추상, 거실…">
+        <div class="c-search__actions">
+          <button type="submit" formmethod="dialog" formnovalidate class="c-btn c-btn--ghost">닫기</button>
+          <button type="submit" class="c-btn c-btn--primary"><span>검색</span><span class="arrow" aria-hidden="true"></span></button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+</div>
+</body>
+</html>

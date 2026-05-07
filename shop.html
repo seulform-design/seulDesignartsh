@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ARTISH 컬렉션 — 이번 시즌 큐레이션 작품 14점. 공간·톤·사이즈·예산으로 비교해 보세요.">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Shop — ARTISH">
+  <meta property="og:description" content="이번 시즌 ARTISH 컬렉션 14점. 공간·톤·사이즈·예산으로 비교하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.artish.kr/shop.html">
+  <meta property="og:site_name" content="ARTISH">
+  <meta property="og:locale" content="ko_KR">
+  <title>Shop — ARTISH</title>
+  <link rel="canonical" href="https://www.artish.kr/shop.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%230A0A0A' width='32' height='32'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23F4F1EA' font-size='15' font-family='sans-serif' font-weight='600'%3EA%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=JetBrains+Mono:wght@400;500&family=Nanum+Myeongjo:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/shop.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+<div class="l-wrap">
+
+  <a href="#main" class="u-skip">본문 바로가기</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="c-header is-scrolled" id="siteHeader">
+    <div class="c-header__inner">
+      <p class="c-header__brand"><a href="./index.html">ARTISH</a></p>
+      <nav class="c-nav" id="primaryNav" aria-label="Primary">
+        <a class="c-nav__item nav-trigger" data-mega="shop" href="./shop.html" aria-expanded="false" aria-controls="mega-shop" aria-current="page">Shop</a>
+        <a class="c-nav__item nav-trigger" data-mega="curation" href="./curation.html" aria-expanded="false" aria-controls="mega-curation">Curation</a>
+        <a class="c-nav__item nav-trigger" data-mega="spaces" href="./spaces.html" aria-expanded="false" aria-controls="mega-spaces">Spaces</a>
+        <a class="c-nav__item nav-trigger" data-mega="artists" href="./artist.html" aria-expanded="false" aria-controls="mega-artists">Artists</a>
+        <a class="c-nav__item nav-trigger" data-mega="gift" href="./gift.html" aria-expanded="false" aria-controls="mega-gift">Gift</a>
+        <a class="c-nav__item nav-trigger" data-mega="journal" href="./journal.html" aria-expanded="false" aria-controls="mega-journal">Journal</a>
+      </nav>
+      <button type="button" class="c-header__menu" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"></button>
+      <div class="c-header__utils">
+        <button type="button" id="search-toggle" aria-haspopup="dialog" aria-controls="search-dialog">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="c-mobile-menu" id="mobileMenu" inert>
+    <div class="c-mobile-menu__panel">
+      <button type="button" class="c-mobile-menu__close" aria-label="메뉴 닫기">&times;</button>
+      <nav class="c-mobile-menu__nav" aria-label="모바일 주요 메뉴">
+        <a href="./shop.html">Shop</a>
+        <a href="./curation.html">Curation</a>
+        <a href="./spaces.html">Spaces</a>
+        <a href="./artist.html">Artists</a>
+        <a href="./gift.html">Gift</a>
+        <a href="./journal.html">Journal</a>
+      </nav>
+      <div class="c-mobile-menu__util">
+        <button type="button" class="js-mobile-search">Search</button>
+        <a href="./contact.html#cart">Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main">
+
+    <!-- 1 · SHOP HERO -->
+    <section class="s-shop-hero" aria-labelledby="shop-hero-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-shop-hero__head is-fade">
+
+          </header>
+
+          <div class="s-shop-hero__main">
+            <h1 id="shop-hero-title" class="s-shop-hero__title is-fade" data-delay="1">The <em>Collection,</em><span class="indent">made easier.</span></h1>
+          </div>
+
+          <figure class="s-shop-hero__figure image-box is-fade" data-delay="2">
+            <img src="./img/Gallery.jpg" alt="큐레이션 작품과 갤러리 조명" loading="eager" fetchpriority="high">
+          </figure>
+
+          <section class="s-shop-hero__toolbar is-fade" data-delay="3" aria-label="필터">
+            <div class="s-shop-hero__filters">
+              <button type="button" class="c-chip is-active">All <span class="x">14</span></button>
+              <button type="button" class="c-chip">Abstract</button>
+              <button type="button" class="c-chip">Mono</button>
+              <button type="button" class="c-chip">Color</button>
+              <button type="button" class="c-chip">Photography</button>
+              <button type="button" class="c-chip">Limited</button>
+            </div>
+            <span class="s-shop-hero__count">14 pieces · filter one, decide faster</span>
+          </section>
+
+          <div class="s-shop-hero__cta">
+            <a href="#all" class="c-btn c-btn--primary"><span>전체 작품 보기</span><span class="arrow" aria-hidden="true"></span></a>
+            <a href="#new" class="c-btn"><span>신상품 먼저 보기</span><span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · FEATURED -->
+    <section class="s-shop-featured" aria-labelledby="featured-title">
+      <div class="l-container">
+        <div class="content">
+          <div class="content-group s-shop-featured__group is-fade">
+            <a href="./product-detail.html" class="image-box s-shop-featured__image" aria-label="Featured Abstract Flow">
+              <span class="c-badge c-badge--accent c-badge--dot">Curator's Pick</span>
+              <span class="s-shop-featured__sticker">FT · 01 / April 2026</span>
+              <img src="./img/canvas.webp" alt="Abstract Flow 아티스트의 추상 작품" loading="lazy">
+            </a>
+            <div class="text-box s-shop-featured__text">
+              <p class="u-eyebrow">Featured · Pick of the month</p>
+              <h2 id="featured-title"><em>Where</em> <br>Summer Begins</h2>
+              <p class="by">by <strong>Elian Moreau</strong> <br> 1400 × 900 cm <br> 거실 / 복도 추천</p>
+              <p class="price">₩ 120,000</p>
+              <a href="./product-detail.html" class="c-link">자세히 보기 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · BAND quote -->
+    <section class="s-shop-band" aria-hidden="true">
+      <div class="l-container">
+        <div class="s-shop-band__group">
+          <p class="s-shop-band__quote is-fade">“작품 한 점이 <br> 들어오면, 결정은 더 쉬워집니다.”</p>
+          <figure class="image-box s-shop-band__thumb is-fade" data-delay="1">
+            <img src="./img/decision.jpg" alt="어두운 톤 전시 벽면의 추상 회화" loading="lazy">
+          </figure>
+          <span class="s-shop-band__meta is-fade" data-delay="1">Plate · V<br>2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · COLLECTION (All) -->
+    <section class="s-shop-collection" id="all" aria-labelledby="all-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-shop-collection__head is-fade">
+            <h2 id="all-title">14 pieces, with <em>clear reasons</em></h2>
+            <p class="meta">Sort<br>Best fit first</p>
+          </header>
+
+          <div class="s-shop-collection__grid">
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 01</span>
+                <img src="./img/reasons1.jpg" alt="Soft Light — 부드러운 조명 아래의 추상 회화" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Color</span><span class="price">₩ 98,000</span></div>
+              <h3><em>여름 정원에서</em> 책 읽는 여인</h3>
+              <p class="by">by <strong>Claude Monet</strong></p>
+              <p class="cap">Color · Acrylic on canvas</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--med">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 02</span>
+                <img src="./img/reasons2.jpg" alt="Warm Corner" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Mono</span><span class="price">₩ 134,000</span></div>
+              <h3>비너스의 탄생</h3>
+              <p class="by">by <strong>Sandro Botticelli</strong></p>
+              <p class="cap">Mono · Oil on linen</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--med">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 03</span>
+                <img src="./img/reasons3.jpg" alt="Urban Calm" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Photo</span><span class="price">₩ 87,000</span></div>
+              <h3>진주 귀걸이를<em> 한 소녀</em></h3>
+              <p class="by">by <strong>Johannes Vermeer</strong></p>
+              <p class="cap">Photo · Pigment print</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 04</span>
+                <img src="./img/reasons4.jpg" alt="Pale Field" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Abstract</span><span class="price">₩ 162,000</span></div>
+              <h3>절규</h3>
+              <p class="by">by <strong>Edvard Munch</strong></p>
+              <p class="cap">Abstract · Canvas</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 05</span>
+                <img src="./img/reasons5.jpg" alt="Garden, Twice — 정원 꽃밭 톤의 수채화 느낌" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Color</span><span class="price">₩ 78,000</span></div>
+              <h3>우는 <em>여인</em></h3>
+              <p class="by">by <strong>Picasso</strong></p>
+              <p class="cap">Color · Watercolor</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 06</span>
+                <img src="./img/reasons6.jpg" alt="Quiet Stone" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Mono</span><span class="price">₩ 210,000</span></div>
+              <h3>자화상</h3>
+              <p class="by">by <strong>Vincent Van Gogh</strong></p>
+              <p class="cap">Mono · Oil</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece">
+              <div class="image-box">
+                <span class="c-badge c-badge--num">No. 07</span>
+                <img src="./img/reasons7.jpg" alt="After Rain" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Photo</span><span class="price">₩ 92,000</span></div>
+              <h3>빨강, 파랑, 노랑의 구성</h3>
+              <p class="by">by <strong>Cornelis Mondriaan</strong></p>
+              <p class="cap">Photo · Pigment print</p>
+            </a>
+
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge c-badge--accent c-badge--dot">Limited · 1/3</span>
+                <img src="./img/reasons8.jpg" alt="Long, Slow Horizon" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Abstract</span><span class="price">₩ 280,000</span></div>
+              <h3>기억의 <em>지속</em></h3>
+              <p class="by">by <strong>Salvador Dalí</strong></p>
+              <p class="cap">Abstract · Canvas · Edition 1/3</p>
+            </a>
+          </div>
+
+          <div class="s-shop-collection__more">
+            <button type="button" class="c-btn c-btn--ghost"><span>조건 맞는 작품 더 보기</span><span class="arrow" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · COLLECTION (New) -->
+    <section class="s-shop-collection" id="new" aria-labelledby="new-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-shop-collection__head is-fade">
+            <h2 id="new-title">New arrivals, <em>this month</em></h2>
+            <p class="meta">April 2026<br>latest picks</p>
+          </header>
+          <div class="s-shop-collection__grid">
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge c-badge--ink">New · Apr 06</span>
+                <img src="./img/Famous1.jpg" alt="Light Garden" loading="lazy">
+              </div>
+              <div class="row"><span class="num">New</span><span class="price">₩ 108,000</span></div>
+              <h3>별이 빛나는 밤</h3>
+              <p class="cap">베스트 상품 · 공간 적합도 높음</p>
+            </a>
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge c-badge--ink">New · Apr 12</span>
+                <img src="./img/Famous2.jpg" alt="Warm Window" loading="lazy">
+              </div>
+              <div class="row"><span class="num">New</span><span class="price">₩ 115,000</span></div>
+              <h3>꽃피는 아몬드 나무</h3>
+              <p class="cap">베스트 상품 · 침실 추천</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · COLLECTION (Under 100k) -->
+    <section class="s-shop-collection" id="under" aria-labelledby="under-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-shop-collection__head is-fade">
+            <h2 id="under-title">Under ₩100,000, <em>easy decision</em></h2>
+            <p class="meta">budget fit<br>quick buy</p>
+          </header>
+          <div class="s-shop-collection__grid">
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge">Under 100k</span>
+                <img src="./img/Monet1.jpg" alt="Garden, Twice — 푸른 식물과 자연광" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Under 100k</span><span class="price">₩ 78,000</span></div>
+              <h3>석양에 물든 센강</h3>
+              <p class="cap">예산 내 추천 · 작업실 적합</p>
+            </a>
+            <a href="./product-detail.html" class="s-shop-collection__piece s-shop-collection__piece--lg">
+              <div class="image-box">
+                <span class="c-badge">Under 100k</span>
+                <img src="./img/Monet2.jpg" alt="Urban Calm" loading="lazy">
+              </div>
+              <div class="row"><span class="num">Under 100k</span><span class="price">₩ 87,000</span></div>
+              <h3>인상, 해돋이</h3>
+              <p class="cap">예산 내 추천 · 거실/침실</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · RECENTLY VIEWED -->
+    <section class="s-shop-recent" id="recent" aria-labelledby="recent-title">
+      <div class="l-container">
+        <div class="content">
+          <header class="s-shop-recent__head is-fade">
+            <h2 id="recent-title">Recently <em>viewed</em></h2>
+            <p class="meta">최근 24시간<br>마지막 방문 작품</p>
+          </header>
+          <div class="s-shop-recent__list">
+            <a href="./product-detail.html" class="s-shop-recent__item">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">1h ago</span>
+                <img src="./img/viewed1.jpg" alt="Soft Light — 부드러운 조명 아래의 추상 회화" loading="lazy">
+              </div>
+              <h3>[액자포함] Rose and Lime</h3>
+              <span class="by">by <strong>Sandy Dooley</strong></span>
+              <span class="price">₩ 149,000</span>
+            </a>
+            <a href="./product-detail.html" class="s-shop-recent__item">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">3h ago</span>
+                <img src="./img/viewed2.jpg" alt="Urban Calm" loading="lazy">
+              </div>
+              <h3>[액자포함] A Bunch of Flowers II</h3>
+              <span class="by">by <strong>Farida Zaman</strong></span>
+              <span class="price">₩ 77,000</span>
+            </a>
+            <a href="./product-detail.html" class="s-shop-recent__item">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">9h ago</span>
+                <img src="./img/viewed3.jpg" alt="Quiet Stone" loading="lazy">
+              </div>
+              <h3>Aurora Red Maple</h3>
+              <span class="by">by <strong>Ann Marie Coolick</strong></span>
+              <span class="price">₩ 24,000</span>
+            </a>
+            <a href="./product-detail.html" class="s-shop-recent__item">
+              <div class="image-box">
+                <span class="c-badge c-badge--invert">Yesterday</span>
+                <img src="./img/viewed4.jpg" alt="Pale Field — 옅은 톤의 추상 캔버스" loading="lazy">
+              </div>
+              <h3>[액자포함] Mother Daughter</h3>
+              <span class="by">by <strong>Giselle Dekel</strong></span>
+              <span class="price">₩ 68,000</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__top">
+        <div class="c-footer__brand">
+          <h2>ARTISH</h2>
+          <p>Art lives in space 공간을 채우는 가장 조용한 선택,<br> 큐레이션 기반 아트 커머스.</p>
+          <address class="c-footer__addr">
+            <span>서울 서초구 남부순환로 2406</span>
+            <span>예술의전당 비타민스테이션 · 아티쉬</span>
+            <span><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a> · <a href="tel:0225888444">02&#8209;588&#8209;8444</a></span>
+          </address>
+        </div>
+        <div class="c-footer__col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="./shop.html">All</a></li>
+            <li><a href="./curation.html">Curation</a></li>
+            <li><a href="./spaces.html">Spaces</a></li>
+            <li><a href="./gift.html">Gift</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="./about.html">Brand</a></li>
+            <li><a href="./artist.html">Artists</a></li>
+            <li><a href="./journal.html">Journal</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Service</h3>
+          <ul>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#shipping">Shipping</a></li>
+            <li><a href="#return">Return</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="c-footer__col">
+          <h3>Customer</h3>
+          <ul>
+            <li><a href="tel:0225888444">02&#8209;588&#8209;8444</a></li>
+            <li><a href="mailto:admin@artish.co.kr">admin@artish.co.kr</a></li>
+            <li><span>09:30 — 17:00</span></li>
+            <li><span>주말·공휴일 휴무</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-footer__bottom">
+        <div class="c-footer__copy">
+          <span>© 2026 ARTISH</span>
+          <span class="div">·</span>
+          <span>(주)한국아트체인</span>
+          <span class="div">·</span>
+          <span>대표 정영산</span>
+          <span class="div">·</span>
+          <span>사업자번호 214-85-09363</span>
+          <span class="div">·</span>
+          <span>통신판매업신고 2002-서울서초-1726</span>
+        </div>
+        <ul class="c-footer__policy">
+          <li><a href="./about.html">회사소개</a></li>
+          <li><a href="#terms">이용약관</a></li>
+          <li><a href="#privacy">개인정보처리방침</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="back-to-top" class="c-back-top" aria-label="Top">↑</a>
+
+  <!-- ===================== SEARCH DIALOG ===================== -->
+  <dialog id="search-dialog" class="c-search" aria-labelledby="search-dialog-title" aria-modal="true">
+    <div class="c-search__inner">
+      <form method="dialog">
+        <button type="submit" class="c-search__close" aria-label="검색 닫기">×</button>
+      </form>
+      <h2 id="search-dialog-title" class="c-search__title">검색.</h2>
+      <p class="c-search__desc">작품명 · 작가 · 스타일 · 공간</p>
+      <form class="c-search__form" action="./shop.html" method="get" role="search">
+        <label for="search-query" class="u-sr-only">검색어</label>
+        <input type="search" id="search-query" name="q" class="c-search__input" autocomplete="off" placeholder="차분한, 추상, 거실…">
+        <div class="c-search__actions">
+          <button type="submit" formmethod="dialog" formnovalidate class="c-btn c-btn--ghost">닫기</button>
+          <button type="submit" class="c-btn c-btn--primary"><span>검색</span><span class="arrow" aria-hidden="true"></span></button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+</div>
+</body>
+</html>
