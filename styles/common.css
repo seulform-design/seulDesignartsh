@@ -326,7 +326,15 @@ h4 em,
 .c-nav__item::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform var(--t-fast)}
 .c-nav__item:hover::after{transform:scaleX(1)}
 .c-header__utils{display:flex;gap:14px;align-items:center}
-.c-header__utils button{font-family:var(--font-mono);font-size:var(--fs-cap);letter-spacing:var(--ls-wide);text-transform:uppercase}
+/* Search(button) · Cart(link) — 동일 라벨 타이포(네비 .c-nav__item와 계열 맞춤) */
+.c-header__utils :is(button,a){
+  font-family:var(--font-mono);
+  font-size:var(--fs-cap);
+  letter-spacing:var(--ls-wide);
+  text-transform:uppercase;
+  font-synthesis:none;
+  line-height:1.2;
+}
 
 .c-header.is-on-hero{color:var(--invert);background:transparent}
 .c-header.is-scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(14px);color:var(--ink);border-bottom-color:var(--line)}

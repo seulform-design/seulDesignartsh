@@ -374,6 +374,39 @@
     b.addEventListener('click', () => b.classList.toggle('is-on'));
   });
 
+  /* PDP — size guide: 선택 상태 · 헤더 메타 동기화 · 키보드 */
+  const sizeGrid = $('.s-pdp-size__grid');
+  const sizeHeadMeta = $('.s-pdp-size__head .meta');
+  if (sizeGrid && sizeHeadMeta) {
+    const sizeItems = $$('.s-pdp-size__item', sizeGrid);
+    const syncMeta = (label) => {
+      if (label) sizeHeadMeta.textContent = `현재 선택 · ${label}`;
+    };
+    const activate = (article) => {
+      sizeItems.forEach((el) => {
+        const on = el === article;
+        el.classList.toggle('is-current', on);
+        el.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      syncMeta(article.dataset.sizeLabel || '');
+    };
+    sizeItems.forEach((article) => {
+      article.setAttribute('role', 'button');
+      article.setAttribute('tabindex', '0');
+      article.setAttribute('aria-pressed', article.classList.contains('is-current') ? 'true' : 'false');
+      const open = () => activate(article);
+      article.addEventListener('click', open);
+      article.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          open();
+        }
+      });
+    });
+    const initial = $('.s-pdp-size__item.is-current', sizeGrid);
+    if (initial?.dataset.sizeLabel) syncMeta(initial.dataset.sizeLabel);
+  }
+
   /* Sticky purchase bar (PDP) — show after hero gallery scroll past */
   const stickyBuy = $('#stickyBuy');
   const heroSentinel = $('.s-pdp-gallery') || $('.s-pdp-hero');
